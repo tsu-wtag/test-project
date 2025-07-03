@@ -4,3 +4,5 @@ repos:
     hooks:
       - id: gitleaks
         args: ["--config=./gitleaks.toml", "--verbose", "--staged"]
+
+

@@ -16,3 +16,6 @@ sops:
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.8.1
+
+
+password: mime

@@ -1,0 +1,31 @@
+image:
+  tag: 15.6.0
+
+postgresqlDataDir: /bitnami/postgresql/data
+
+metrics:
+  enabled: true
+  image:
+    registry: docker.io
+    repository: bitnami/postgres-exporter
+    tag: 0.15.0-debian-12-r16
+
+serviceAccount:
+  enabled: true
+rbac:
+  create: true
+primary:
+  lifecycleHooks:
+    preStop:
+      exec:
+        command:
+        - pg_ctl
+        - stop
+  persistence:
+    enabled: true
+    size: 10Gi
+    storageClass: ssd
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi

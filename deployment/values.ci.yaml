@@ -1,0 +1,84 @@
+fullnameOverride: mime
+nameOverride: mime
+image:
+  repository: us-west1-docker.pkg.dev/nodal-algebra-161404/mime/mime
+  tag: v10
+  frontendTag: v100
+geocoder:
+  googleApiKey: fake_random_key
+database:
+  adaptor: postgresql
+  pool: 5
+  host: fake_ranghdom_key.mime
+  port: 5432
+  user: postgres
+  password: fake_random_keyfake_random_key
+  database: mime
+rollbar:
+  key: fake_random_key
+  env: papa
+  version: 1.2.1
+railsEnv: papa
+railsLogToStdout: true
+railsServeStaticFiles: true
+trustedProxies: 34.95.91.145
+secretKeyBase: fake_random_keyfake_random_keyfake_random_keyfake_random_keyfake_random_keyfake_random_keyfake_random_keyfake_random_key
+mailer:
+  host: fake_random_key
+  protocol: http
+postmark:
+  server:
+    token: fake_random_key
+slack:
+  channel_id:
+    operational: secret_value
+    attendance: secret_value
+  channelId: fake_random_key
+  botToken: fake_random_key
+resources:
+  frontend:
+    requests:
+      cpu: 20m
+      memory: 64Mi
+  backend:
+    requests:
+      cpu: 20m
+      memory: 700Mi
+  rufus:
+    requests:
+      cpu: 20m
+      memory: 3ddd00Mi
+  leaveCreateWorker:
+    requests:
+      cpu: 15m
+      memory: 300Mi
+region: Dhaka
+ingress:
+  staticIpName: fake_random_key
+  domain: fake_random_key
+office:
+  longitude: 90.40458
+  latitude: 23.793898
+leaveCancelCount: 5
+gcs:
+  projectId: fake_random_key
+  bucketName: fake_random_key
+  jsonCredential: ZmFrZV9yYW5kb21fa2V5Cg==
+sneakersThreads: "1"
+sneakersWorkers: "1"
+amqp:
+  host: fake_random_key
+  port: 5672
+  username: fake_random_key
+  password: fake_random_key
+  vhost: fake_random_key
+redisUrl: fake_random_key
+officeStartTime: "12:30"
+fullDayWorkingTime: "12:30"
+halfDayWorkingTime: "12:15"
+mimeFrontendPath: dummy.url.com
+google:
+  clientId: dummy_id
+  clientSecret: dummy_client
+nginx:
+  conf: dummy_conf

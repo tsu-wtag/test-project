@@ -15,11 +15,15 @@ title = "gitleaks config"
 
 # TODO: change to [[allowlists]]
 
-
 [allowlist]
-description = "global allow lists"
+description = "Combined global and custom allow lists"
+
+
+
+# Additional path-based exclusions (from default gitleaks allowlist)
 paths = [
     '''gitleaks\.toml''',
+    '''deployment/values\.ci\.yaml''',
     '''(?i)\.(?:bmp|gif|jpe?g|png|svg|tiff?)$''',
     '''(?i)\.(?:eot|[ot]tf|woff2?)$''',
     '''(?i)\.(?:docx?|xlsx?|pdf|bin|socket|vsidx|v2|suo|wsuo|.dll|pdb|exe|gltf)$''',
@@ -43,8 +47,10 @@ paths = [
     '''\.gem$''',
     '''verification-metadata\.xml''',
     '''Database.refactorlog''',
-    '''(?:^|/)\.git$''',
+    '''(?:^|/)\.git$'''
 ]
+
+# Regex-based exclusions
 regexes = [
     '''(?i)^true|false|null$''',
     '''^(?i:a+|b+|c+|d+|e+|f+|g+|h+|i+|j+|k+|l+|m+|n+|o+|p+|q+|r+|s+|t+|u+|v+|w+|x+|y+|z+|\*+|\.+)$''',
@@ -58,12 +64,15 @@ regexes = [
     '''^\{\d{0,2}}$''',
     '''^@(?:[A-Z_]+|[a-z_]+)@$''',
     '''^/Users/(?i)[a-z0-9]+/[\w .-/]+$''',
-    '''^/(?:bin|etc|home|opt|tmp|usr|var)/[\w ./-]+$''',
+    '''^/(?:bin|etc|home|opt|tmp|usr|var)/[\w ./-]+$'''
 ]
+
+# Stopwords (ignore these values)
 stopwords = [
     "014df517-39d1-4453-b7b3-9930c563627c",
-    "abcdefghijklmnopqrstuvwxyz",
+    "abcdefghijklmnopqrstuvwxyz"
 ]
+
 
 [[rules]]
 description = "Generic password assignment"

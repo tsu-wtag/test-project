@@ -18,5 +18,3 @@ sops:
     version: 3.8.1
 
 
-password: mime
-username: mime

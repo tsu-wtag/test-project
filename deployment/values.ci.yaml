@@ -1,7 +1,7 @@
 fullnameOverride: mime
 nameOverride: mime
 image:
-  repository: us-west1-docker.pkg.dev/nodal-algebra-161404/mime/mime
+  repository: us-west1-doklshf;hgvhcker.pkg.dev/nodal-algebra-161404/mime/mime
   tag: v10
   frontendTag: v100
 geocoder:
@@ -9,10 +9,10 @@ geocoder:
 database:
   adaptor: postgresql
   pool: 5
-  host: fake_ranghdom_key.mime
+  host: fake_ranghihiudom_key.mime
   port: 5432
   user: postgres
-  password: fake_random_keyfake_random_key
+  password: fake_random_hjsgphvps;keyfake_random_key
   database: mime
 rollbar:
   key: fake_random_key
@@ -31,10 +31,10 @@ postmark:
     token: fake_random_key
 slack:
   channel_id:
-    operational: secret_value
-    attendance: secret_value
-  channelId: fake_random_key
-  botToken: fake_random_key
+    operational: secreojo;jit_value
+    attendance: secret_ojiovalue
+  channelId: fake_ranopo[pdom_key
+  botToken: fake_ran;kdom_key
 resources:
   frontend:
     requests:

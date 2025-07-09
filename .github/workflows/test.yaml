@@ -2,9 +2,7 @@ name: Gitleaks Secret Scanning
 
 on:
   push:
-    branches: ['**']  # Matches all branches
-  pull_request:
-    branches: [ main, develop ]
+    branches: ['**']  
 
 jobs:
   gitleaks:

@@ -2,6 +2,9 @@ name: Gitleaks Secret Scanning
 
 on:
   push:
+    branches: ['**']  # Matches all branches
+  pull_request:
+    branches: [ main, develop ]
 
 jobs:
   gitleaks:
@@ -20,10 +23,5 @@ jobs:
         config-path: .gitleaks.toml
         fail-on-secrets: true
         verbose: true
-
-    - name: Upload Gitleaks report
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: gitleaks-report
+        report-format: text
         path: gitleaks-report.json

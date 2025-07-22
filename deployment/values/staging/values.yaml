@@ -6,12 +6,12 @@ database:
   adaptor: postgresql
 region: papap
 railsEnv: papa
-railsLogToStdout: true
+railsLogToStdout: false
 railsServeStaticFiles: true
 trustedProxies: 00.00.00.145
-welldayFrontendPath: https://smime.mime.mime
+welldayFrontendPath: https://smimfrgvbvbve.mime.mime
 mailer:
-  host: smime.mime.mime
+  host: smime.mifgggme.mime
   protocol: http
 office:
   longitude: "12.7400777"
